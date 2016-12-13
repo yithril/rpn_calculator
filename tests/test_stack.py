@@ -83,3 +83,7 @@ def test_stack_satisfies_len_contract():
     s.pop()
     s.pop()
     assert len(s) == 0
+
+def test_stack_empty():
+    s = Stack()
+    s.empty()

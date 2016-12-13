@@ -1,13 +1,14 @@
 class Stack:
     def __init__(self):
-        pass
+        self.data = []
     def push(self, elem):
-        raise NotImplementedError
+        self.data.append(elem)
     def __len__(self):
-        return 0
+        return len(self)
     def empty(self):
         return len(self)==0
     def pop(self):
-        raise IndexError
-    def peep(self):
-        raise IndexError
+        self.data.pop()
+    def peek(self):
+        return self.data[0]
+
